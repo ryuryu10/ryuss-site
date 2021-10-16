@@ -42,9 +42,9 @@
 				messageA_translateY_in: [20, 0, { start: 0.1, end: 0.175 }],
 				messageB_translateY_in: [20, 0, { start: 0.235, end: 0.3 }],
 				messageC_translateY_in: [20, 0, { start: 0.37, end: 0.435 }],
-				messageD_translateY_in: [20, 0, { start: 0.7, end: 0.8 }],
-				messageE_translateY_in: [20, 0, { start: 0.7, end: 0.8 }],
-				messageF_translateY_in: [20, 0, { start: 0.7, end: 0.8 }],
+				messageD_translateY_in: [20, 0, { start: 0.5, end: 0.575 }],
+				messageE_translateY_in: [20, 0, { start: 0.635, end: 0.7 }],
+				messageF_translateY_in: [20, 0, { start: 0.77, end: 0.83 }],
 
 				messageA_opacity_out: [1, 0, { start: 0.2, end: 0.235 }],
 				messageB_opacity_out: [1, 0, { start: 0.335, end: 0.37 }],
@@ -53,12 +53,12 @@
 				messageE_opacity_out: [1, 0, { start: 0.735, end: 0.77 }],
 				messageF_opacity_out: [1, 0, { start: 0.865, end: 0.9 }],
 
-				messageA_translateY_out: [0, -20, { start: 0.25, end: 0.3 }],
-				messageB_translateY_out: [0, -20, { start: 0.45, end: 0.5 }],
-				messageC_translateY_out: [0, -20, { start: 0.65, end: 0.7 }],
-				messageD_translateY_out: [0, -20, { start: 0.85, end: 0.9 }],
-				messageE_translateY_out: [0, -20, { start: 0.65, end: 0.7 }],
-				messageF_translateY_out: [0, -20, { start: 0.65, end: 0.7 }]
+				messageA_translateY_out: [0, -20, { start: 0.2, end: 0.235 }],
+				messageB_translateY_out: [0, -20, { start: 0.335, end: 0.37 }],
+				messageC_translateY_out: [0, -20, { start: 0.47, end: 0.5 }],
+				messageD_translateY_out: [0, -20, { start: 0.6, end: 0.635 }],
+				messageE_translateY_out: [0, -20, { start: 0.735, end: 0.77 }],
+				messageF_translateY_out: [0, -20, { start: 0.865, end: 0.9 }]
 			}
 		},
 		{
