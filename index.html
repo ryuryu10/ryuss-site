@@ -9,9 +9,17 @@
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="before-load">
+	<div class="loading">
+		<svg class="loading-circle">
+			<circle cx="50%" cy="50%" r="25"></circle>
+		</svg>
+	</div>
     <div class="container">
         <section class="scroll-section" id="scroll-section-0">
+            <div class="sticky-elem sticky-elem-canvas">
+				<canvas id="video-canvas-0" width="1920" height="1080"></canvas>
+			</div>
             <h1>👋 <br>안녕하세요!</h1>
             <div class="sticky-elem main-message a">
 				<p>제 이름은 유승우에요.</p>
@@ -30,14 +38,15 @@
                 <p>다양한 프로젝트를 진행함으로써 쌓아온 경험들은 <br>
                     앞으로 새로운 프로젝트를 진행하는데 도움을 주죠.</p>
 			</div>
-            <div class="sticky-elem main-message c">
+            <div class="sticky-elem main-message e">
 				<p>다양한 활동들</p>
 			</div>
-            <div class="sticky-elem main-message c">
+            <div class="sticky-elem main-message f">
 				<p>컴퓨터 프로그래밍뿐만 아니라</p>
                 <p>컴퓨터에 관련된 다양한 활동들을 했었습니다</p>
 			</div>
         </section>
     </div>
+    <script src="script/script.js"></script>
 </body>
 </html>
