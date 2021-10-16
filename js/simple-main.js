@@ -13,7 +13,7 @@
 		{
 			// 0
 			type: 'sticky',
-			heightNum: 5, // 브라우저 높이의 5배로 scrollHeight 세팅
+			heightNum: 9, // 브라우저 높이의 5배로 scrollHeight 세팅
 			scrollHeight: 0,
 			objs: {
 				container: document.querySelector('#scroll-section-0'),
@@ -167,13 +167,13 @@
 		const currentYOffset = yOffset - prevScrollHeight;
 		const scrollHeight = sceneInfo[currentScene].scrollHeight;
 		const scrollRatio = currentYOffset / scrollHeight;
-		console.log(currentYOffset, scrollHeight, scrollRatio, values.messageA_opacity_in)
+		console.log(currentYOffset, scrollHeight, scrollRatio)
 
 		switch (currentScene) {
 			case 0:
 				objs.canvas.style.opacity = calcValues(values.canvas_opacity, currentYOffset);
 
-				if (scrollRatio <= 0.13) {
+				if (scrollRatio <= 0.2) {
 					// in
 					objs.messageA.style.opacity = calcValues(values.messageA_opacity_in, currentYOffset);
 					objs.messageA.style.transform = `translate3d(0, ${calcValues(values.messageA_translateY_in, currentYOffset)}%, 0)`;

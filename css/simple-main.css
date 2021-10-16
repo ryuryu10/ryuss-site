@@ -23,6 +23,7 @@ a {
 	overflow-x: hidden;
 }
 .scroll-section {
+	border: red dotted 2px;
 	position: relative;
 	padding-top: 50vh;
 }
@@ -31,7 +32,7 @@ a {
 }
 #scroll-section-0 h1 {
 	position: relative;
-	top: -10vh;
+	top: -25vh;
 	z-index: 5;
 	font-size: 4rem;
 	text-align: center;
