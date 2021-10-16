@@ -21,7 +21,13 @@ a {
 	font-size: 1px!important;
 	float: left;
 }
-
+.box{
+	top:50%;
+	left:50%;
+	transform:translate(-0%, -0%);
+	width : 80vw;
+  	height : 80vh;
+}
 .container {
 	/* iPhone 가로 스크롤 방지 */
 	overflow-x: hidden;
