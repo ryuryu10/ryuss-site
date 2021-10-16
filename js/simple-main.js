@@ -21,8 +21,6 @@
 				messageB: document.querySelector('#scroll-section-0 .main-message.b'),
 				messageC: document.querySelector('#scroll-section-0 .main-message.c'),
 				messageD: document.querySelector('#scroll-section-0 .main-message.d'),
-				messageE: document.querySelector('#scroll-section-0 .main-message.e'),
-				messageF: document.querySelector('#scroll-section-0 .main-message.f'),
 				canvas: document.querySelector('#video-canvas-0'),
 				context: document.querySelector('#video-canvas-0').getContext('2d'),
 				videoImages: []
@@ -35,9 +33,6 @@
 				messageB_opacity_in: [0, 1, { start: 0.3, end: 0.4 }],
 				messageC_opacity_in: [0, 1, { start: 0.5, end: 0.6 }],
 				messageD_opacity_in: [0, 1, { start: 0.7, end: 0.8 }],
-				messageE_opacity_in: [0, 1, { start: 0.7, end: 0.7 }], //edit
-				messageF_opacity_in: [0, 1, { start: 0.7, end: 0.7 }], //edit
-				
 				messageA_translateY_in: [20, 0, { start: 0.1, end: 0.2 }],
 				messageB_translateY_in: [20, 0, { start: 0.3, end: 0.4 }],
 				messageC_translateY_in: [20, 0, { start: 0.5, end: 0.6 }],
@@ -84,8 +79,9 @@
 	function setCanvasImages() {
 		let imgElem;
 		for (let i = 0; i < sceneInfo[0].values.videoImageCount; i++) {
+			k = 0;
 			imgElem = new Image();
-			imgElem.src = `/video/001/IMG_${6726 + i}.JPG`;
+			imgElem.src = `./video/001/IMG_${6726 + k}.JPG`;
 			sceneInfo[0].objs.videoImages.push(imgElem);
 		}
 	}
@@ -157,6 +153,7 @@
 		const currentYOffset = yOffset - prevScrollHeight;
 		const scrollHeight = sceneInfo[currentScene].scrollHeight;
 		const scrollRatio = currentYOffset / scrollHeight;
+		console.log(currentYOffset, scrollHeight, scrollRatio, values.messageA_opacity_in)
 
 		switch (currentScene) {
 			case 0:
