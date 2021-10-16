@@ -17,6 +17,10 @@ a {
 	color: rgb(29, 29, 31);
 	text-decoration: none;
 }
+.title1 {
+	font-size: 1px!important;
+	float: left;
+}
 
 .container {
 	/* iPhone 가로 스크롤 방지 */
