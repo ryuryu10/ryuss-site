@@ -32,26 +32,26 @@
 				imageSequence: [0, 299],
 				canvas_opacity: [1, 0, { start: 0.9, end: 1 }],
 
-				messageA_opacity_in: [0, 1, { start: 0.1, end: 0.2 }],
-				messageB_opacity_in: [0, 1, { start: 0.3, end: 0.4 }],
-				messageC_opacity_in: [0, 1, { start: 0.5, end: 0.6 }],
-				messageD_opacity_in: [0, 1, { start: 0.7, end: 0.8 }],
-				messageE_opacity_in: [0, 1, { start: 0.7, end: 0.8 }],
-				messageF_opacity_in: [0, 1, { start: 0.7, end: 0.8 }],
+				messageA_opacity_in: [0, 1, { start: 0.1, end: 0.175 }],
+				messageB_opacity_in: [0, 1, { start: 0.235, end: 0.3 }],
+				messageC_opacity_in: [0, 1, { start: 0.37, end: 0.435 }],
+				messageD_opacity_in: [0, 1, { start: 0.5, end: 0.575 }],
+				messageE_opacity_in: [0, 1, { start: 0.635, end: 0.7 }],
+				messageF_opacity_in: [0, 1, { start: 0.77, end: 0.83 }],
 				
-				messageA_translateY_in: [20, 0, { start: 0.1, end: 0.2 }],
-				messageB_translateY_in: [20, 0, { start: 0.3, end: 0.4 }],
-				messageC_translateY_in: [20, 0, { start: 0.5, end: 0.6 }],
+				messageA_translateY_in: [20, 0, { start: 0.1, end: 0.175 }],
+				messageB_translateY_in: [20, 0, { start: 0.235, end: 0.3 }],
+				messageC_translateY_in: [20, 0, { start: 0.37, end: 0.435 }],
 				messageD_translateY_in: [20, 0, { start: 0.7, end: 0.8 }],
 				messageE_translateY_in: [20, 0, { start: 0.7, end: 0.8 }],
 				messageF_translateY_in: [20, 0, { start: 0.7, end: 0.8 }],
 
-				messageA_opacity_out: [1, 0, { start: 0.25, end: 0.3 }],
-				messageB_opacity_out: [1, 0, { start: 0.45, end: 0.5 }],
-				messageC_opacity_out: [1, 0, { start: 0.65, end: 0.7 }],
-				messageD_opacity_out: [1, 0, { start: 0.85, end: 0.9 }],
-				messageE_opacity_out: [1, 0, { start: 0.85, end: 0.9 }],
-				messageF_opacity_out: [1, 0, { start: 0.85, end: 0.9 }],
+				messageA_opacity_out: [1, 0, { start: 0.2, end: 0.235 }],
+				messageB_opacity_out: [1, 0, { start: 0.335, end: 0.37 }],
+				messageC_opacity_out: [1, 0, { start: 0.47, end: 0.5 }],
+				messageD_opacity_out: [1, 0, { start: 0.6, end: 0.635 }],
+				messageE_opacity_out: [1, 0, { start: 0.735, end: 0.77 }],
+				messageF_opacity_out: [1, 0, { start: 0.865, end: 0.9 }],
 
 				messageA_translateY_out: [0, -20, { start: 0.25, end: 0.3 }],
 				messageB_translateY_out: [0, -20, { start: 0.45, end: 0.5 }],
@@ -173,7 +173,7 @@
 			case 0:
 				objs.canvas.style.opacity = calcValues(values.canvas_opacity, currentYOffset);
 
-				if (scrollRatio <= 0.2) {
+				if (scrollRatio <= 0.18) {
 					// in
 					objs.messageA.style.opacity = calcValues(values.messageA_opacity_in, currentYOffset);
 					objs.messageA.style.transform = `translate3d(0, ${calcValues(values.messageA_translateY_in, currentYOffset)}%, 0)`;
@@ -183,7 +183,7 @@
 					objs.messageA.style.transform = `translate3d(0, ${calcValues(values.messageA_translateY_out, currentYOffset)}%, 0)`;
 				}
 
-				if (scrollRatio <= 0.26) {
+				if (scrollRatio <= 0.32) {
 					// in
 					objs.messageB.style.opacity = calcValues(values.messageB_opacity_in, currentYOffset);
 					objs.messageB.style.transform = `translate3d(0, ${calcValues(values.messageB_translateY_in, currentYOffset)}%, 0)`;
@@ -193,7 +193,7 @@
 					objs.messageB.style.transform = `translate3d(0, ${calcValues(values.messageB_translateY_out, currentYOffset)}%, 0)`;
 				}
 
-				if (scrollRatio <= 0.39) {
+				if (scrollRatio <= 0.45) {
 					// in
 					objs.messageC.style.opacity = calcValues(values.messageC_opacity_in, currentYOffset);
 					objs.messageC.style.transform = `translate3d(0, ${calcValues(values.messageC_translateY_in, currentYOffset)}%, 0)`;
@@ -203,7 +203,7 @@
 					objs.messageC.style.transform = `translate3d(0, ${calcValues(values.messageC_translateY_out, currentYOffset)}%, 0)`;
 				}
 
-				if (scrollRatio <= 0.52) {
+				if (scrollRatio <= 0.58) {
 					// in
 					objs.messageD.style.opacity = calcValues(values.messageD_opacity_in, currentYOffset);
 					objs.messageD.style.transform = `translate3d(0, ${calcValues(values.messageD_translateY_in, currentYOffset)}%, 0)`;
@@ -213,7 +213,7 @@
 					objs.messageD.style.transform = `translate3d(0, ${calcValues(values.messageD_translateY_out, currentYOffset)}%, 0)`;
 				}
 
-				if (scrollRatio <= 0.65) {
+				if (scrollRatio <= 0.72) {
 					// in
 					objs.messageE.style.opacity = calcValues(values.messageE_opacity_in, currentYOffset);
 					objs.messageE.style.transform = `translate3d(0, ${calcValues(values.messageE_translateY_in, currentYOffset)}%, 0)`;
@@ -223,7 +223,7 @@
 					objs.messageE.style.transform = `translate3d(0, ${calcValues(values.messageE_opacity_out, currentYOffset)}%, 0)`;
 				}
 
-				if (scrollRatio <= 0.78) {
+				if (scrollRatio <= 0.85) {
 					// in
 					objs.messageF.style.opacity = calcValues(values.messageF_opacity_in, currentYOffset);
 					objs.messageF.style.transform = `translate3d(0, ${calcValues(values.messageF_opacity_in, currentYOffset)}%, 0)`;
