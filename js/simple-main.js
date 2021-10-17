@@ -60,33 +60,8 @@
 				messageE_translateY_out: [0, -20, { start: 0.735, end: 0.77 }],
 				messageF_translateY_out: [0, -20, { start: 0.865, end: 0.9 }]
 			}
-		},
-		{
-			// 1
-			type: 'sticky',
-			heightNum: 5,
-			scrollHeight: 0,
-			objs: {
-				container: document.querySelector('#scroll-section-1'),
-				messageA: document.querySelector('#scroll-section-1 .a'),
-				messageB: document.querySelector('#scroll-section-1 .b'),
-				messageC: document.querySelector('#scroll-section-1 .c')
-			},
-			values: {
-				messageA_translateY_in: [20, 0, { start: 0.1, end: 0.15 }],
-				messageB_translateY_in: [30, 0, { start: 0.35, end: 0.4 }],
-				messageC_translateY_in: [30, 0, { start: 0.6, end: 0.65 }],
-				messageA_opacity_in: [0, 1, { start: 0.1, end: 0.15 }],
-				messageB_opacity_in: [0, 1, { start: 0.35, end: 0.4 }],
-				messageC_opacity_in: [0, 1, { start: 0.6, end: 0.65 }],
-				messageA_translateY_out: [0, -20, { start: 0.3, end: 0.35 }],
-				messageB_translateY_out: [0, -20, { start: 0.55, end: 0.6 }],
-				messageC_translateY_out: [0, -20, { start: 0.8, end: 0.85 }],
-				messageA_opacity_out: [1, 0, { start: 0.25, end: 0.3 }],
-				messageB_opacity_out: [1, 0, { start: 0.55, end: 0.6 }],
-				messageC_opacity_out: [1, 0, { start: 0.8, end: 0.85 }]
-			}
 		}
+		
 	];
 
 	// 이미지 시퀀스 비디오에 쓰이는 이미지
@@ -315,6 +290,7 @@
 				const objs = sceneInfo[currentScene].objs;
 				const values = sceneInfo[currentScene].values;
 				let sequence = Math.round(calcValues(values.imageSequence, currentYOffset));
+				console.log(sequence);
 				if (objs.videoImages[sequence]) {
 					objs.context.drawImage(objs.videoImages[sequence], 0, 0);
 				}

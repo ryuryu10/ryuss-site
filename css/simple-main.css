@@ -22,6 +22,7 @@ a {
 	font-size: 2rem;
 	float: left;
 }
+
 .container {
 	/* iPhone 가로 스크롤 방지 */
 	overflow-x: hidden;
