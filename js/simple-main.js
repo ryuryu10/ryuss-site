@@ -28,7 +28,7 @@
 				videoImages: []
 			},
 			values: {
-				videoImageCount: 300,
+				videoImageCount: 900,
 				imageSequence: [0, 299],
 				canvas_opacity: [1, 0, { start: 0.9, end: 1 }],
 
@@ -93,9 +93,8 @@
 	function setCanvasImages() {
 		let imgElem;
 		for (let i = 0; i < sceneInfo[0].values.videoImageCount; i++) {
-			k = 0;
 			imgElem = new Image();
-			imgElem.src = `./video/001/IMG_${6726 + k}.JPG`;
+			imgElem.src = `./video/001/SN_IMG_${00+i}.jpg`;
 			sceneInfo[0].objs.videoImages.push(imgElem);
 		}
 	}
