@@ -17,9 +17,14 @@ a {
 	color: rgb(29, 29, 31);
 	text-decoration: none;
 }
+.titlea {
+	font-size: 5rem;
+}
+.titleb{
+	font-size: 3rem;
+}
 #scroll-section-0 .a {
 	top: 40%!important;
-	font-size: 2rem;
 	float: left;
 }
 
