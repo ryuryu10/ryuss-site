@@ -2,7 +2,7 @@ $(document).ready(function() {
     $('#fullpage').fullpage({
         'verticalCentered': false,
         'css3': true,
-        'sectionsColor': ['#F0F2F4', '#fff', '#fff', '#fff'],
+        'sectionsColor': ['#040021', '#fff', '#fff', '#fff'],
         'navigation': true,
         'navigationPosition': 'right',
         'navigationTooltips': ['fullPage.js', 'Powerful', 'Amazing', 'Simple'],
@@ -24,6 +24,8 @@ $(document).ready(function() {
             $('#staticImg').toggleClass('active', (index == 2 && direction == 'down' ) || (index == 4 && direction == 'up'));
             $('#staticImg').toggleClass('moveDown', nextIndex == 4);
             $('#staticImg').toggleClass('moveUp', index == 4 && direction == 'up');
+
+            $() 
         }
     });
 });
