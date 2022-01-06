@@ -79,3 +79,23 @@ video::-webkit-media-controls {
     display:none !important;
 }
 
+.circle {
+    
+    background: #2A9CFF;
+    
+}
+
+#section1 .circle{
+    position: absolute;
+    z-index: 5;
+    width: 140px;
+    height: 140px;
+    left: 10%;
+    top: 35%;
+    -moz-border-radius: 70px; 
+    -webkit-border-radius: 70px; 
+    border-radius: 70px;
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
