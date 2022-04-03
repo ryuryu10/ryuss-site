@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "mosk700";
+    src: url("../asset/fonts/Mosk Bold 700.ttf");
+  }
+
+.title {
+    font-family: "mosk700";
+}
+
+.t1 {
+    font-size: 75px;
+    position: absolute;
+    top: 11%;
+    left: 36%;
+}
+
+.t2 {
+    font-size: 75px;
+    position: absolute;
+    top: 63%;
+    left: 57%;
+}
+
+.square {
+    border: 9px solid black;
+    width: 20%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    background-image: url(../asset/images/thum.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.square:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.red_bar {
+    position: absolute;
+    top: 38.8rem;
+    left: 45.5rem;
+    border-right: 5px solid #FF4343;
+    height: 50px;
+}
+
+.red_box {
+    position: absolute;
+    top: 14.7rem;
+    left: 71rem;
+
+    height: 50px;
+    width: 50px;
+
+    border-top: 5px solid #FF4343;
+    border-right: 5px solid #FF4343;
+}
+
+
+.blue_bar {
+    position: absolute;
+    top: 40.1rem;
+    left: 43.5rem;
+    height: 30px;
+    border-right: 5px solid #6143FF;
+
+}
+
+.blue_box {
+    position: absolute;
+    top: 12.7rem;
+    left: 73rem;
+
+    height: 50px;
+    width: 50px;
+
+    border-top: 5px solid #6143FF;
+    border-right: 5px solid #6143FF;
+}
+
+.message1 {
+    margin-left: 30px;
+    font-family: "mosk700";
+    font-size: 30px;
+    writing-mode: vertical-rl;
+}
