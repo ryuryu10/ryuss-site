@@ -4,10 +4,12 @@
   }
 
 .title {
+    color: black;
     font-family: "mosk700";
 }
 
 .t1 {
+    color: black;
     font-size: 75px;
     position: absolute;
     top: 11%;
@@ -15,6 +17,7 @@
 }
 
 .t2 {
+    color: black;
     font-size: 75px;
     position: absolute;
     top: 63%;
@@ -44,16 +47,16 @@
 
 .red_bar {
     position: absolute;
-    top: 38.8rem;
-    left: 45.5rem;
+    top: 40.8rem;
+    left: 49.5rem;
     border-right: 5px solid #FF4343;
     height: 50px;
 }
 
 .red_box {
     position: absolute;
-    top: 14.7rem;
-    left: 71rem;
+    top: 16.7rem;
+    left: 75rem;
 
     height: 50px;
     width: 50px;
@@ -65,8 +68,8 @@
 
 .blue_bar {
     position: absolute;
-    top: 40.1rem;
-    left: 43.5rem;
+    top: 42.1rem;
+    left: 47.5rem;
     height: 30px;
     border-right: 5px solid #6143FF;
 
@@ -74,8 +77,8 @@
 
 .blue_box {
     position: absolute;
-    top: 12.7rem;
-    left: 73rem;
+    top: 14.7rem;
+    left: 77rem;
 
     height: 50px;
     width: 50px;
@@ -85,6 +88,7 @@
 }
 
 .message1 {
+    color: black;
     margin-left: 30px;
     font-family: "mosk700";
     font-size: 30px;

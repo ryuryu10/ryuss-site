@@ -216,6 +216,20 @@ main {
 	font-family: linotype-didot, serif;
 }
 
+.revealer {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	transform: rotate(-8deg);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	pointer-events: none;
+}
+
+
 .grid {
 	position: absolute;
 	display: grid;
@@ -311,9 +325,7 @@ main {
 .number {
 	font-size: 2rem;
 	-webkit-text-stroke: 1.5px var(--color-number);
-    text-stroke: 1.5px var(--color-number);
     -webkit-text-fill-color: transparent;
-    text-fill-color: transparent;
     color: transparent;	
     line-height: 1;
     margin: 0 0 0.5rem 0;
