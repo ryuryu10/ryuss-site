@@ -1,0 +1,94 @@
+@font-face {
+  font-family: 'mosk700';
+  src: url('../asset/fonts/Mosk Bold 700.ttf');
+}
+
+.title {
+  color: black;
+  font-family: 'mosk700';
+}
+
+.t1 {
+  color: black;
+  font-size: 75px;
+  position: absolute;
+  top: 11%;
+  left: 36%;
+}
+
+.t2 {
+  color: black;
+  font-size: 75px;
+  position: absolute;
+  top: 63%;
+  left: 57%;
+}
+
+.square {
+  border: 9px solid black;
+  width: 35vh;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-image: url(../asset/images/thum.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.square:after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
+.red_bar {
+  position: absolute;
+  top: calc(100% / 2 - 40%);
+  left: 49.5rem;
+  border-right: 5px solid #ff4343;
+  height: 50px;
+}
+
+.red_box {
+  position: absolute;
+  top: 16.7rem;
+  left: 75rem;
+
+  height: 50px;
+  width: 50px;
+
+  border-top: 5px solid #ff4343;
+  border-right: 5px solid #ff4343;
+}
+
+.blue_bar {
+  position: absolute;
+  top: 42.1rem;
+  left: 47.5rem;
+  height: 30px;
+  border-right: 5px solid #6143ff;
+}
+
+.blue_box {
+  position: absolute;
+  top: 14.7rem;
+  left: 77rem;
+
+  height: 50px;
+  width: 50px;
+
+  border-top: 5px solid #6143ff;
+  border-right: 5px solid #6143ff;
+}
+
+.message1 {
+  color: black;
+  margin-left: 30px;
+  font-family: 'mosk700';
+  font-size: 30px;
+  writing-mode: vertical-rl;
+}
